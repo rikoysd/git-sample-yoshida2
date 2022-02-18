@@ -1,5 +1,5 @@
 export class Employee {
-  constructor(private _id: number, private _address: string) {}
+  constructor(private _id: number, private _nickname: string) {}
 
   public get id(): number {
     return this._id;
@@ -9,11 +9,11 @@ export class Employee {
     this._id = id;
   }
 
-  public get name(): string {
-    return this._name;
+  public get nickname(): string {
+    return this._nickname;
   }
 
-  public set name(name: string) {
-    this._name = name;
+  public set nickname(nickname: string) {
+    this._nickname = nickname;
   }
 }
